@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>10</strength>
@@ -117,11 +118,11 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>4</number>
+    <number>3</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>Main</name>
-      <name>Extras</name>
+      <name>Devel</name>
       <name>Media</name>
       <name>Devel</name>
     </names>
@@ -178,61 +179,70 @@
     <keybind key="C-A-Left">
       <action name="GoToDesktop"/>
     </keybind>
-    <keybind key="W-Left">
+    <keybind key="A-W-Left">
       <action name="GrowToEdgeWest"/>
     </keybind>
-    <keybind key="W-Right">
+    <keybind key="A-W-Right">
       <action name="GrowToEdgeEast"/>
     </keybind>
-    <keybind key="W-Down">
+    <keybind key="W-c">
+      <action name="MoveToCenter"/>
+    </keybind>
+    <keybind key="W-v">
+      <action name="ToggleMaximizeVert"/>
+    </keybind>
+    <keybind key="W-h">
+      <action name="ToggleMaximizeHorz"/>
+    </keybind>
+    <keybind key="A-W-Down">
       <action name="GrowToEdgeSouth"/>
     </keybind>
-    <keybind key="W-Up">
+    <keybind key="A-W-Up">
       <action name="GrowToEdgeNorth"/>
     </keybind>
-    <keybind key="A-l">
+    <keybind key="W-l">
       <action name="Execute">
         <command>i3lock-fancy</command>
       </action>
     </keybind>
-    <keybind key="A-w">
+    <keybind key="W-w">
       <action name="Execute">
         <command>google-chrome-stable</command>
       </action>
     </keybind>
-    <keybind key="A-Left">
+    <keybind key="W-Left">
       <action name="MoveToEdgeWest"/>
     </keybind>
-    <keybind key="A-Right">
+    <keybind key="W-Right">
       <action name="MoveToEdgeEast"/>
     </keybind>
-    <keybind key="A-Up">
+    <keybind key="W-Up">
       <action name="MoveToEdgeNorth"/>
     </keybind>
-    <keybind key="A-Down">
+    <keybind key="W-Down">
       <action name="MoveToEdgeSouth"/>
     </keybind>
-    <keybind key="A-F7">
+    <keybind key="W-F6">
       <action name="Execute">
         <command>xbacklight -inc 10</command>
       </action>
     </keybind>
-    <keybind key="A-F6">
+    <keybind key="W-F5">
       <action name="Execute">
         <command>xbacklight -dec 10</command>
       </action>
     </keybind>
-    <keybind key="A-x">
+    <keybind key="W-x">
       <action name="Execute">
         <command>oblogout</command>
       </action>
     </keybind>
-    <keybind key="A-Return">
+    <keybind key="W-Return">
       <action name="Execute">
         <command>xfce4-terminal</command>
       </action>
     </keybind>
-    <keybind key="A-r">
+    <keybind key="W-r">
       <action name="Execute">
         <command>gmrun</command>
       </action>
@@ -273,15 +283,15 @@
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
-    <keybind key="A-q">
+    <keybind key="W-q">
       <action name="Close"/>
     </keybind>
-    <keybind key="A-f">
+    <keybind key="W-f">
       <action name="Execute">
         <command>pcmanfm</command>
       </action>
     </keybind>
-    <keybind key="A-a">
+    <keybind key="W-a">
       <action name="ToggleMaximizeFull"/>
     </keybind>
     <keybind key="A-Escape">
@@ -320,7 +330,7 @@
     </keybind>
     <keybind key="W-e">
       <action name="Execute">
-        <command>kfmclient openProfile filemanagement</command>
+        <command>subl3</command>
         <startupnotify>
           <enabled>yes</enabled>
           <name>Konqueror</name>
