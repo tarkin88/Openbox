@@ -15,6 +15,8 @@
 # If you want to use XFCE config tools...
 #xfce-mcs-manager &
 nitrogen --restore &
+pulseaudio &
+numlockx &
 (sleep 1 && tint2) & 
 (sleep 1 && compton) & 
 (sleep 5 && nm-applet) & 

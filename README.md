@@ -14,4 +14,5 @@ Clonar el repositorio y colocar en  *~/.config/openbox
 - volumeicon (GUI ALSA con accesos directos configurables)
 - clipit (gestor de portapapeles)
 - network-manager-applet A.K.A. nm-applet (gestor grafico de NetworkManager)
-
+- i3lock-color (para usar i3lock Fancy)
+- i3lock-fancy (bloqueo de pantalla elegante)
